@@ -69,4 +69,15 @@ center {
   .video {
     margin-bottom: 1em;
   }
+  li {
+    margin-top: 1.5em;
+    color: #000;
+    a {
+      color: #404479;
+      font-size: 1.2em;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }

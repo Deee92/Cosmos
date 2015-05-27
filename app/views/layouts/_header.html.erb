@@ -15,11 +15,22 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chapters <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <% Chapter.each do |chapter| %>
-              <li><%= link_to "Chapter #{chapter.number}", chapter_path(chapter) %></li>
+              <li><%= link_to "Chapter #{chapter.number}", chapter %></li>
             <% end %>
           </ul>
         </li>
         <li class="<%= 'active' if current_page?(carl_sagan_path) %>"><%= link_to "Carl Sagan", carl_sagan_path %></li>
+        <!-- Search bar -->
+        <li>
+          <%= form_tag search_path, method: "get", class: "navbar-form" do %>
+            <div class="input-group">
+              <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Search" %>
+              <div class="input-group-btn">
+                <button type="submit" class="btn btn-danger">Go</button>
+              </div>
+            </div>
+          <% end %>
+        </li>
       </ul>
     </div>
   </div>

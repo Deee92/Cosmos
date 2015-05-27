@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'carl_sagan' => 'static_pages#carl'
 
   resources :chapters
+
+  get 'search' => 'search#show'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

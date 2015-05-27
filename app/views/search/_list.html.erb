@@ -1,0 +1,5 @@
+<ul>
+  <% @chapters.each do |chapter| %>
+    <li><%= link_to "Chapter #{chapter.number}: #{chapter.name}", chapter %></li>
+  <% end %>
+</ul>
