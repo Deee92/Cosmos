@@ -60,6 +60,12 @@ center {
     &.summary {
       font-style: italic;
     }
+    a {
+      color: #326ada;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   img {
     float: right;
