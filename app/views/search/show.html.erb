@@ -1,4 +1,9 @@
-<% provide(:title, "#{@query}") %>
+<% if @query.present? %>
+  <% provide(:title, "#{@query}") %>
+<% else %>
+  <% provide(:title, "All Chapters") %>
+<% end %>
+
 <div class="content">
   <% if @query.present? %>
 
