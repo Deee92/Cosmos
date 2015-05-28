@@ -74,6 +74,16 @@ center {
     margin-bottom: 1em;
     padding: 1em;
   }
+  .external {
+    font-size: small;
+    text-align: center;
+    a {
+      color: #404479;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
   .video {
     margin-bottom: 1em;
   }
