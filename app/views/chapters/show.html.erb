@@ -9,4 +9,19 @@
       </div>
     </div>
   </div>
+
+  <div class="nav_buttons">
+    <% if @previous != 0 %>
+      <%= link_to chapter_path(@previous) do %>
+        <span class="glyphicon glyphicon-chevron-left" style="float: left;" aria-hidden="true"></span>
+      <% end %>
+    <% end %>
+  
+    <% if @next != 14 %>
+      <%= link_to chapter_path(@next) do %>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right;" aria-hidden="true"></span>
+      <% end %>
+    <% end -%> 
+  </div>
+  
 </div>
